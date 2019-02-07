@@ -138,7 +138,7 @@ class Positional_Mutational_Signature:
                 if self.mode == 0:
                     bad_records_tmp += 1
                     continue
-                KEY = MATE_PAIR[KEY[0]] + MATE_PAIR[KEY[1]] + MATE_PAIR[KEY[2]] + '-' + MATE_PAIR[KEY[4]]
+                KEY = MATE_PAIR[KEY[2]] + MATE_PAIR[KEY[1]] + MATE_PAIR[KEY[0]] + '-' + MATE_PAIR[KEY[4]]
             MS[KEY] += 1
             self.overall_mutational_signature[KEY] += 1
         
